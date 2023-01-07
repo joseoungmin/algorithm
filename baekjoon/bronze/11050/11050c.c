@@ -1,16 +1,14 @@
-#include <iostream>
+#include<stdio.h>
 
-using namespace std;
-
-int main(){
+int main(void){
     int n, k;
     int result = 1;
 
-    cin >> n >> k;
+    scanf("%d %d", &n, &k);
     for(int i = 0; i < k; i++){
         result *= n - i;
         result /= i + 1;
     }
-    cout << result << endl;
+    printf("%d\n", result);
     return 0;
 }
